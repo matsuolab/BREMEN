@@ -37,7 +37,7 @@ python save_video.py --env ant --param_path configs/params_ant_offline.json --vi
 ```
 
 You can use four pre-trained policies of BREMEN `ant`, `half_cheetah`, `hopper`, `walker2d`.
-
+(This process requires offline data for the normalization of state and action.)
 
 ## Run deployment-efficient experiments
 Run BREMEN in deployment-efficient experiments using the following command:
@@ -109,7 +109,7 @@ Please use the following bibtex for citations:
 ```
 @article{matsushima2020deploy,
     title={Deployment-Efficient Reinforcement Learning via Model-Based Offline Optimization},
-    author={Tatsuya Matsushima and Hiroki Furuta and Yutaka Matsuo and Ofir Nachum and Shixiang shane Gu},
+    author={Tatsuya Matsushima and Hiroki Furuta and Yutaka Matsuo and Ofir Nachum and Shixiang Shane Gu},
     year={2020},
     journal={arXiv preprint arXiv:2006.03647},
 }
