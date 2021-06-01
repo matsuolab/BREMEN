@@ -4,8 +4,9 @@ import json
 
 def process_params(options, param_path=None):
     if options.env in [
-            'half_cheetah', 'ant', 'walker2d',
-            'hopper', 'cheetah_run']:
+            'half_cheetah', 'ant', 'walker2d', 'hopper', 'cheetah_run',
+            'fetchpush_dense', 'fetchreach_dense',
+            'handreach_dense']:
         if param_path is None:
             param_path = os.path.join(os.path.curdir, 'configs/params_%s.json' % options.env)
     else:

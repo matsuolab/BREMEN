@@ -1,0 +1,55 @@
+{
+    "env_name": "fetchpush_dense",
+    "log_save_dir": "./log/",
+    "start_onpol_iter": 0,
+    "num_path_random": 50,
+    "num_path_onpol": 20,
+    "env_horizon": 50,
+    "max_train_data": 10000000,
+    "max_val_data": 10000000,
+    "discard_ratio": 0.0,
+    "dynamics":{
+      "pre_training": {
+        "mode": "offline",
+        "itr": 0,
+        "policy_itr": 25
+      },
+      "ensemble": true,
+      "enable_particle_ensemble": true,
+      "particles": 5,
+      "obs_var": 0.1,
+      "intrinsic_reward_coeff": 1.0,
+      "ita": 1.0,
+      "mode": "random",
+      "val": true,
+      "n_layers": 2,
+      "hidden_size": 1024,
+      "activation": "relu",
+      "batch_size": 1000,
+      "learning_rate": 1e-3,
+      "reg_coeff": 0.0,
+      "epochs": 200
+    },
+    "policy":{
+      "network_shape": [200, 200],
+      "init_logstd": 0.0,
+      "activation": "relu",
+      "reinitialize_every_itr": false
+    },
+    "behavior_policy": {
+      "network_shape": [200,200],
+      "init_logstd": 0.0,
+      "activation": "relu",
+      "reinitialize_every_itr": false,
+      "val": true,
+      "batch_size": 256,
+      "learning_rate": 5e-4
+    },
+    "trpo":{
+      "gamma": 0.99,
+      "iterations": 25,
+      "gae": 0.97,
+      "visualization": false,
+      "visualize_iterations": [0]
+    }
+  }
