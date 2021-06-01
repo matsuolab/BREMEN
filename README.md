@@ -107,10 +107,10 @@ python offline.py --env walker2d --exp_name offline_example --sub_exp_name BREME
 ## Citation
 Please use the following bibtex for citations:
 ```
-@article{matsushima2020deploy,
+@inproceedings{matsushima2020deploy,
     title={Deployment-Efficient Reinforcement Learning via Model-Based Offline Optimization},
     author={Tatsuya Matsushima and Hiroki Furuta and Yutaka Matsuo and Ofir Nachum and Shixiang Shane Gu},
-    year={2020},
-    journal={arXiv preprint arXiv:2006.03647},
+    year={2021},
+    booktitle={International Conference on Learning Representations},
 }
 ```
