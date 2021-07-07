@@ -1,5 +1,5 @@
 # Deployment-Efficient Reinforcement Learning via Model-Based Offline Optimization
-This codebase implements a deployment-efficient algorithm, BREMEN, proposed in [Deployment-Efficient Reinforcement Learning via Model-Based Offline Optimization](https://arxiv.org/abs/2006.03647).
+This codebase implements a deployment-efficient algorithm, BREMEN, proposed in [Deployment-Efficient Reinforcement Learning via Model-Based Offline Optimization](https://openreview.net/forum?id=3hGNqpI4WS).
 
 We modified [ME-TRPO](https://github.com/WilsonWangTHU/mbbl-metrpo) repository for deployment-efficient or offline settings.
 
